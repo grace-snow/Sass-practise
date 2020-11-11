@@ -1,0 +1,127 @@
+$primary-clr: rgb(0, 255, 255);
+$secondary-clr: rgb(255, 0, 127);
+$tertory-clr: rgb(255, 51, 51);
+$light-grey: rgb(116, 116, 116);
+$light-green: rgb(0, 255, 128);
+$d-blue: rgb(0, 204, 204);
+$more-d-blue: rgb(0, 128, 255);
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-image: url("D:\ALL PROJECTS\SASS PRACTICE\main\bg.png");
+    box-sizing: border-box;
+    width: 1300px;
+}
+
+header {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        font-family: monospace;
+        font-weight: bolder;
+        color: $light-green;
+        font-size: 40px;
+        width: 500px;
+        text-align: center;
+        height: 100px;
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+}
+
+.navbar {
+    background: linear-gradient(to right,
+            rgba($secondary-clr, 0.9),
+            rgba($primary-clr, 0.9));
+    border: 1px solid black;
+    margin: 25px;
+    padding-right: 30px;
+    font-size: 1.2em;
+    width: 30em;
+    height: 3em;
+    box-shadow: 10px 10px 30px $tertory-clr;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+
+            &:hover {
+                color: black;
+                border-bottom: 3px solid $tertory-clr;
+                transition: all 0.4s ease-in;
+            }
+        }
+    }
+}
+
+.navbar-2 {
+    border-radius: 100px;
+    background: linear-gradient(to left, $tertory-clr, $light-green);
+    box-shadow: 10px 10px 30px $more-d-blue;
+
+    ul {
+        a {
+            &:hover {
+                border-bottom: 3px solid $more-d-blue;
+            }
+        }
+    }
+}
+
+.navbar-3 {
+    margin-top: 45px;
+    float: right;
+    background: linear-gradient(to right,
+            rgba($more-d-blue, 0.7),
+            rgba($tertory-clr, 0.7) 55%);
+    box-shadow: 10px 10px 30px $secondary-clr;
+    margin-right: 15px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+
+    ul {
+        a {
+            &:hover {
+                border-bottom: 3px solid $secondary-clr;
+            }
+        }
+    }
+}
+
+.navbar-4 {
+    margin-top: 165px;
+    border-radius: 0;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background: linear-gradient(to right,
+            rgba($more-d-blue, 0.7),
+            rgba($light-green, 0.7));
+    box-shadow: 10px 10px 20px $primary-clr;
+
+    ul {
+        a {
+            &:hover {
+                border-bottom: 3px solid $primary-clr;
+                background: linear-gradient(to right,
+                        rgba($more-d-blue, 0.6),
+                        rgba($light-green, 0.6));
+                border-radius: 10px;
+                padding: 5px;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+}
